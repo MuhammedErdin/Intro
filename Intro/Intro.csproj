@@ -44,12 +44,19 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Business\CourseManager.cs" />
+    <Compile Include="DataAccess\Abstract\ICourseDal.cs" />
+    <Compile Include="DataAccess\Concrete\CourseDal.cs" />
+    <Compile Include="DataAccess\Concrete\EfCourseDal.cs" />
+    <Compile Include="Entities\BaseCustomer.cs" />
+    <Compile Include="Entities\CoorporateCustomer.cs" />
     <Compile Include="Entities\Course.cs" />
+    <Compile Include="Entities\IndividualCustomer.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
